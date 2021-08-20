@@ -1137,13 +1137,13 @@ app.listen(3000);
 
 		- **{{each target}}
      {{$index}} {{$value}}
-   {{/each}}**
+    {{/each}}**
 
 	- 原始语法
 
 		- **<% for(var i = 0; i < target.length; i++){ %>
      <%= i %> <%= target[i] %>
-   <% } %>**
+    <% } %>**
 
 ### 子模板
 
