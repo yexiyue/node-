@@ -376,7 +376,7 @@ node
 
 ### 2.创建web服务器
 
-![image-20210820213322067](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210957777.png)
+![image-20210820213322067](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211109525.png)
 
 ### 3.HTTP协议
 
@@ -394,9 +394,9 @@ node
 
 - 请求地址
 
-  ![image-20210820213521158](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210957528.png)
+  ![image-20210820213521158](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211109039.png)
 
-  代码![image-20210820213537297](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210957674.png)
+  代码![image-20210820213537297](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211109968.png)
 
 响应报文
 
@@ -438,7 +438,7 @@ get请求参数
 		- true表示转换成对象
 		- pathname地址ming
 		- query传输来的数据
-- 代码![image-20210820213842390](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210957352.png)
+- 代码![image-20210820213842390](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211109155.png)
 - **post请求参数**
   - 参数被放置在请求体中进行传输
   - 获取POST参数需要使用data事件和end事件
@@ -446,7 +446,7 @@ get请求参数
 
 代码
 
-![image-20210820214036146](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210957212.png)
+![image-20210820214036146](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211110555.png)
 
 
 
@@ -454,7 +454,7 @@ get请求参数
 
 - 服务器端不需要处理，可以直接响应给客户端的资源就是静态资源，例如CSS、JavaScript、 image文件。
 - 代码
-- ![image-20210820214106652](./1/img/image-20210820214106652.png)
+- ![image-20210820214106652](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211110487.png)
 	- 通过writeHead设置编码格式
 	- 核心逻辑：
 	
@@ -483,7 +483,7 @@ get请求参数
 	- 获取请求地址
 	- 对不同的请求类型依据地址做出不同的响应
 
-- 代码![image-20210820214139697](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210957511.png)
+- 代码![image-20210820214139697](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211110454.png)
 
 
 
@@ -515,22 +515,22 @@ get请求参数
 - 回调函数
 
   - 自己定义函数让别人去调用。
-  - ![image-20210820214529390](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210957376.png)
+  - ![image-20210820214529390](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211110582.png)
   - 通过回调函数我们可以拿到异步API的返回结果
 
 - 同步API从上到下依次执行，前面代码会阻塞后面代码的执行
 - 执行顺序
 
 	- 先同步后异步
-	- ![image-20210820214545196](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210957685.png)
+	- ![image-20210820214545196](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211111392.png)
 	
-	- ![image-20210820214614575](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210958132.png)
+	- ![image-20210820214614575](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211111984.png)
 
 ### 4.回调地狱
 
 - 异步api解决顺序问题只能用回调函数嵌套
 - 因此容易导致回调地狱
-- ![image-20210820214645915](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210958589.png)
+- ![image-20210820214645915](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211111027.png)
 
 ### 5.Promise
 
@@ -556,7 +556,7 @@ get请求参数
   
   
   
-- 例子![image-20210820214707815](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210958720.png)
+- 例子![image-20210820214707815](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211111101.png)
 
 ### 6.异步函数
 
@@ -574,12 +574,12 @@ get请求参数
 	- **1. await关键字只能出现在异步函数中**
 	- **2. await promise await后面只能写promise对象其他类型的API不不可以的**
 	- **3. await关键字可是暂停异步函数向下执行直到promise返回结果**
-	- 代码![image-20210820214741923](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210958556.png)
+	- 代码![image-20210820214741923](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211111145.png)
 
 - **promisify方法**
 	- **改造现有异步函数api让其返回promise对象从而支持异步函数语法**
 	- **const promisify = require( ' util' ). promisify;**
-	- 代码![image-20210820214757376](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210958263.png)
+	- 代码![image-20210820214757376](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211112741.png)
 
 
 
@@ -620,7 +620,7 @@ get请求参数
 
 - **使用mongoose提供的connect方法即可连接数据库。**
 
-	- 代码![image-20210820214931730](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210958722.png)
+	- 代码![image-20210820214931730](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211112929.png)
 
 - **在MongoDB中不需要显式创建数据库，如果正在使用的数据库不存在，MongoDB会自动创建。**
 
@@ -630,15 +630,15 @@ get请求参数
 
   二. 是创建集合,创建mongoose Schema构造函数的实例即可创建集合。
 
-  代码![image-20210820215008214](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210958128.png)
+  代码![image-20210820215008214](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211112780.png)
 
   **2.创建文档**
 
   - 创建文档实际上就是向集合中插入数据。
   - ①创建集合实例。
   - ②调用实例对象下的save方法将数据保存到数据库中。
-  - 第一种方法![image-20210820215021187](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210958651.png)
-  - **常用**（第二种方法）![image-20210820215031991](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210958265.png)
+  - 第一种方法![image-20210820215021187](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211112148.png)
+  - **常用**（第二种方法）![image-20210820215031991](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211113391.png)
 
   **3.导入数据**
 
@@ -657,7 +657,7 @@ get请求参数
     Course.findOne({name: ' node. js基础'}).then (result => console.log(result) )//返回一个文档
     ```
 
-    ![image-20210820215839299](../1/img/image-20210820215839299.png)
+    ![image-20210820215839299](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211113780.png)
 
   - **匹配大于小于**
 
@@ -695,7 +695,7 @@ get请求参数
     User.find().skip(2).limit(2).then(result =>console.log(result))
     ```
 
-    ![image-20210820220351500](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210959654.png)
+    ![image-20210820220351500](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211113557.png)
 
   **5.删除数据**
 
@@ -754,8 +754,8 @@ get请求参数
 
   	- **可以设置dafault:Date.now**
 
-  - 代码![image-20210820220808279](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210959727.png)
-  - 获取错误信息![image-20210820220842049](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210959180.png)
+  - 代码![image-20210820220808279](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211113225.png)
+  - 获取错误信息![image-20210820220842049](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211113472.png)
 
   **8.集合关联**
 
@@ -765,11 +765,11 @@ get请求参数
 
   - 使用populate方法进行关联集合查询
 
-  - ![image-20210820220908192](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210959910.png)
+  - ![image-20210820220908192](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211113919.png)
 
   - **代码**
 
-    ![image-20210820220930254](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210959478.png)
+    ![image-20210820220930254](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211113641.png)
 
     - **关联使用type:mongoose.Schema.Types.ObjectId,ref:'被关联集合名称'**
     - **使用populate方法里传关联字段**
@@ -1319,8 +1319,8 @@ app.listen(3000);
 
 ### 模块化构建路由
 
-- ![image-20210820221917093](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210959497.png)
-- 图示![image-20210820221929372](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210959001.png)
+- ![image-20210820221917093](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211114294.png)
+- 图示![image-20210820221929372](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211114471.png)
 
 ### 请求参数获取
 
@@ -1340,7 +1340,7 @@ app.listen(3000);
 
 - 图示
 
-  ![image-20210820221949064](C:/Users/%E6%A2%A6%E5%9B%9E%E5%8D%83%E8%BD%AC%E7%99%BD%E9%A6%96/Desktop/node/node-/1/img/image-20210820221949064.png)
+  ![image-20210820221949064](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211114679.png)
 
 - 注意：必须得有请求参数，不然访问不到路由
 
@@ -1429,7 +1429,7 @@ app.listen(3000);
 
 - **图示**
 
-  ![image-20210820222317674](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210959992.png)
+  ![image-20210820222317674](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211114170.png)
 
 - 依赖
 
@@ -1452,7 +1452,7 @@ app.listen(3000);
 
 - **session：实际上就是一个对象，存储在服务器端的内存中，在session对象中也可以存储多条数据，每一条数据都有一个sessionid做为唯一标识**
 
-- **实现登录原理**![image-20210820222526944](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210959029.png)
+- **实现登录原理**![image-20210820222526944](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211114611.png)
 
 - **在node.js中需要借助express-session实现session功能**
 
@@ -1470,7 +1470,7 @@ app.listen(3000);
 
 ### 登录拦截
 
-- 图示![image-20210820222541125](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210959115.png)
+- 图示![image-20210820222541125](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211114422.png)
 
 ### **新增用户**
 
@@ -1501,7 +1501,7 @@ app.listen(3000);
 - User.countDocuments({})查询数量
 - 设置每页数量
 - 计算总页数
-- 图示![image-20210820222618175](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210959480.png)
+- 图示![image-20210820222618175](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211114563.png)
 
 ### **用户信息修改**
 
@@ -1514,7 +1514,7 @@ app.listen(3000);
 
 ### 妙啊
 
-![image-20210820222652312](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210959508.png)
+![image-20210820222652312](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211115342.png)
 
 ### **用户信息删除**
 
@@ -1539,13 +1539,13 @@ app.listen(3000);
 
 - 作用：解析表单，支持get请求参数，post请求参数、文件上传
 - 图示
-- ![image-20210820222743576](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210959576.png)
+- ![image-20210820222743576](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211115642.png)
 
 ### 文件读取(图片预览)
 
 - 图示
-- ![image-20210820222822074](https://raw.githubusercontent.com/yexiyue/images/main/img/202108210959775.png)
-- 代码![image-20210820222834084](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211000686.png)
+- ![image-20210820222822074](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211115118.png)
+- 代码![image-20210820222834084](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211115404.png)
 
 ### **第三方模块mongoose-sex-page**（重点）
 
@@ -1609,11 +1609,11 @@ pagination(集合构造函数).page(1).size(20).distlay(8).exec();
 - **因为在不同的环境中，项目的配置是不一样的， 需要在项目代码中判断当前项目运行的环境，根据不同的环境应用不同的项目配置。**
 - 如何区分
 
-	- 图示![image-20210820223051645](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211000641.png)
+	- 图示![image-20210820223051645](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211115148.png)
 	- 获取系统环境变量
 
 		- **process.env.NODE_ENV**
-		- 图示![image-20210820223104495](./1/img/image-20210820223104495.png)
+		- 图示![image-20210820223104495](https://raw.githubusercontent.com/yexiyue/images/main/img/202108211115623.png)
 
 ### 第三方模块config(重点)
 
